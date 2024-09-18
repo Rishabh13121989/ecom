@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests"  name="Regression">
+
+<listeners>
+<listener class-name="automationproject.TestComponents.Listeners"/>
+</listeners>
+  <test thread-count="5" name="Order submission Test">
+    <classes>
+    <class name="automationproject.testcases.E2ETest1.java"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="Error Validation Test">
+    <classes>
+      <class name="automationproject.testcases.ErrorValidations.java"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
